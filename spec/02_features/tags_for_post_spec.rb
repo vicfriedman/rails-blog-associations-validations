@@ -9,6 +9,7 @@ describe 'tags for posts', :type => :feature do
 
   it 'can create a post with adding one tag' do
     visit '/posts/new'
+    puts page.body
     fill_in('Name', :with => 'Post title')
     fill_in('Content', :with => 'post content')
     check('cute')
